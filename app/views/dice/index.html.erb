@@ -1,0 +1,16 @@
+<div class="dice-container">
+  <% 
+  die1 = rand(1..6)
+  die2 = rand(1..6)
+  total = die1 + die2
+  %>
+
+  <h1>Dice</h1>
+
+  <p class="dice-images">
+    <img src="/images/dice/<%= die1 %>.svg">
+    <img src="/images/dice/<%= die2 %>.svg">
+  </p>
+
+  <a href="/dice" class="roll-btn">Roll Again</a>
+</div>
